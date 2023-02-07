@@ -1,0 +1,22 @@
+div{
+    text-align: center;
+}
+.content{
+    position:fixed;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    margin-top: 150px;
+}
+.vid{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 10%; 
+    min-height: 10%;
+}
+.b{
+    border-radius: 50px;
+    background-color: rgb(155, 142, 240);
+}

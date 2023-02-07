@@ -1,51 +1,9 @@
 <html>
 <head>
     <meta name="Author" content="Nyzuz Pogi Damaso">
+    <link rel="stylesheet" href="style.css">
+    <script src="external.js"></script>
     <title>Login</title>
-    <script>
-        function login(){
-            var p = document.getElementById("pass").value
-            var n = document.getElementById("uname").value;
-
-            if (n === "Nyzuz"){
-                if (p === "Pogi"){
-                    alert("Welcome "+n);
-                }
-            }
-            else{
-                alert("Sorry wrong Account! btch mdfs");
-            }
-        }
-        function showp(){
-            var x = document.getElementById("pass");
-            if (x.type === "password"){
-                x.type = "text";
-            }
-            else{
-                x.type = "password";
-            }
-        }
-    </script>
-    <style>
-        div{
-            text-align: center;
-        }
-        .content{
-            position:fixed;
-            background: rgba(0, 0, 0, 0.5);
-            color: #f1f1f1;
-            width: 100%;
-            padding: 20px;
-            margin-top: 150px;
-        }
-        .vid{
-            position: fixed;
-            right: 0;
-            bottom: 0;
-            min-width: 10%; 
-            min-height: 10%;
-        }
-    </style>
 </head>
 <body>
     <video autoplay muted loop id="myVideo" class="vid">
@@ -55,12 +13,12 @@
     <br>
     <div>
         <form class="content">
-            <h1 class="title">Fesbuk</h1>
+            <h1 class="title">Login</h1>
             Username <br>
-            <input type="text" id="uname" placeholder="Input Username"><br>
+            <input type="text" id="uname" placeholder="Input Username"><br><br>
             Password <br>
-            <input type="password" id="pass" placeholder="Input Password"><br>
-            <input type="button" id="logg" value="Login" onclick="login()"> <input type="checkbox" onclick="showp()"> Show Password
+            <input type="password" id="pass" placeholder="Input Password"><br><br>
+            <input type="button" id="logg" value="Login" onclick="login()" class="b"> <input type="checkbox" onclick="showp()"> Show Password
         </form>
     </div>
     
