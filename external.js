@@ -5,15 +5,15 @@ function login(){
         if(!valipas(p)){
             alert("Invalid Password");
         }
-        else if (!valemail(n)){
-            alert("Invalid Email");
-        }
         else{
             alert("Welcome!");
         }
     } 
-    else {
+    else if (!valemail(n) && (!valipas(p))){
         alert("Either Email or Password is not valid");
+    }
+    else {
+        alert("Invalid Email");
     }
       
 }
