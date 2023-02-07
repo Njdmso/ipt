@@ -17,6 +17,12 @@ div{
     min-height: 10%;
 }
 .b{
-    border-radius: 50px;
+    border-radius: 15px;
     background-color: rgb(155, 142, 240);
+    width: 60px;
+    height: 40px;
+}
+.un, .p{
+width: 200px;
+height: 30px;
 }
